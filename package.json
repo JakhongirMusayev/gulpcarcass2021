@@ -1,0 +1,19 @@
+{
+  "name": "gulp-carcass",
+  "version": "1.0.0",
+  "description": "My gulp project carcass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp, html, scss, js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "sass": "^1.43.5"
+  }
+}
