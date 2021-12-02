@@ -1,0 +1,14 @@
+header {
+  margin: 15px 0;
+  border: blueviolet solid 1px;
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        list-style-type: none;
+        font-weight: bold;
+      }
+    }
+  }
+}

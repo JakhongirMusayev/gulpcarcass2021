@@ -1,9 +1,12 @@
-body {
-  border: 1px solid red;
-  p {
-    background-color: black;
-    &:hover {
-      background-color: chartreuse;
-    }
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  padding: 30px;
+}
+
+@import "main";
+@import "header";
