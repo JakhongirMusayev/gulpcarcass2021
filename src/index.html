@@ -15,19 +15,54 @@
 
   <!--todo MAIN -->
   <main>
-    <h1>Hello, Gulp!</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium tempore repellendus quia dolores ducimus
-      corporis aperiam provident quod distinctio, consequatur deleniti vitae. Ex, impedit. Consequatur dolorem quam
-      culpa
-      quibusdam odio?</p>
-    <a href="#">hello, Gulp & Sass</a>
-    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure minima, asperiores sapiente eveniet quibusdam
-      recusandae, autem sequi incidunt ullam ratione quasi, unde voluptatibus culpa vitae! Voluptatem praesentium
-      voluptatibus hic illo.</p> -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, error soluta pariatur, asperiores praesentium
-      quae inventore quia, nulla quibusdam rerum ipsam reprehenderit fugiat. Quisquam earum, laborum quas reiciendis
-      perferendis blanditiis non praesentium harum sed distinctio voluptatibus nesciunt necessitatibus? Suscipit
-      consectetur quod officia! Neque quas similique dolorum quod dolorem. Iusto, fugit.</p>
+    <h1>Hello, Gulp & Sass!</h1>
+    <ol>
+      <span class="code">Sass</span> quyidagi imkoniyatlarni beradi:
+      <li>CSS qoidalarini bir-birining ichiga joylashtirish;</li>
+      <samp>Bu ota selektorlarning takrorlanishi oldini oladi va katta maketlarda CSSni qo'llashni
+        oconlashtiradi.</samp>
+      <section>
+        <div>
+          <p class="code-text">SCSS</p>
+          <code class="example">
+  <pre>
+    <span class="selector">#main p</span> {
+      <span class="property">color:</span> #00ff00;
+      <span class="property">width:</span> 97%;
+      <span class="selector">.redbox</span> {
+        <span class="property">background-color:</span> #ff0000; 
+        <span class="property">color:</span> #000000;
+      }
+    }
+    </pre>
+        </code>
+        </div>
+        <div>
+          <p class="code-text">CSS</p>
+          <code class="example">
+    <pre>
+      <span class="selector">#main p</span> {
+        <span class="property">color:</span> #00ff00;
+        <span class="property">width:</span> 97%;
+      }
+      <span class="selector">#main p .redbox</span> {
+        <span class="property">background-color:</span> #ff0000; 
+        <span class="property">color:</span> #000000;
+      }
+    </pre>
+          </code>
+        </div>
+      </section>
+      <li>Ota selektorga <span class="code">&</span> belgisi orqali havola yaratadi.</li>
+      <samp>Bu uning qayta-qayta takrorlanmasligini ta'minlaydi.</samp>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+
+
   </main>
   <script src="js/main.min.js"></script>
 </body>
