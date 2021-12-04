@@ -1,0 +1,13 @@
+section.property-anchor {
+  h2 {
+    color: blue;
+  }
+  button {
+    padding: 10px 20px;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      background-color: cadetblue;
+    }
+  }
+}

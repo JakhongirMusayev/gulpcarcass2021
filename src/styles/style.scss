@@ -5,8 +5,13 @@
 }
 
 body {
+  width: 1200px;
+  margin: 0 auto;
   padding: 30px;
 }
 
 @import "main";
-@import "header";
+@import "propertyAnchor";
+@import "propertyNesting";
+@import "shablonSelectors";
+@import "comments";

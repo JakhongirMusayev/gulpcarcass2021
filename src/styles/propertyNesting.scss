@@ -1,0 +1,14 @@
+section.property-nesting {
+  h2 {
+    color: blue;
+  }
+  p {
+    letter-spacing: 5px;
+    // todo "font" so'zidan boshlanuvchi xossalarni umumlashtirish
+    font: {
+      family: Verdana;
+      style: italic;
+      size: 15px;
+    }
+  }
+}

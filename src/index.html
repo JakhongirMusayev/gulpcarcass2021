@@ -10,61 +10,21 @@
 </head>
 
 <body>
-  <!-- todo INCLUDES -->
-  @@include("_header.html")
-
-  <!--todo MAIN -->
-  <main>
-    <h1>Hello, Gulp & Sass!</h1>
-    <ol>
-      <span class="code">Sass</span> quyidagi imkoniyatlarni beradi:
-      <li>CSS qoidalarini bir-birining ichiga joylashtirish;</li>
-      <samp>Bu ota selektorlarning takrorlanishi oldini oladi va katta maketlarda CSSni qo'llashni
-        oconlashtiradi.</samp>
-      <section>
-        <div>
-          <p class="code-text">SCSS</p>
-          <code class="example">
-  <pre>
-    <span class="selector">#main p</span> {
-      <span class="property">color:</span> #00ff00;
-      <span class="property">width:</span> 97%;
-      <span class="selector">.redbox</span> {
-        <span class="property">background-color:</span> #ff0000; 
-        <span class="property">color:</span> #000000;
-      }
-    }
-    </pre>
-        </code>
-        </div>
-        <div>
-          <p class="code-text">CSS</p>
-          <code class="example">
-    <pre>
-      <span class="selector">#main p</span> {
-        <span class="property">color:</span> #00ff00;
-        <span class="property">width:</span> 97%;
-      }
-      <span class="selector">#main p .redbox</span> {
-        <span class="property">background-color:</span> #ff0000; 
-        <span class="property">color:</span> #000000;
-      }
-    </pre>
-          </code>
-        </div>
-      </section>
-      <li>Ota selektorga <span class="code">&</span> belgisi orqali havola yaratadi.</li>
-      <samp>Bu uning qayta-qayta takrorlanmasligini ta'minlaydi.</samp>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ol>
+  <h1>Sass darslari</h1>
+  <!--todo INCLUDES -->
+  @@include("_main.html")
+  @@include("_propertyAnchor.html")
+  @@include("_propertyNesting.html")
+  @@include("_shablonSelectors.html")
 
 
-  </main>
-  <script src="js/main.min.js"></script>
+
+
+
+
+
+  <!-- todo Scripts -->
+  <!-- <script src="js/main.min.js"></script> -->
 </body>
 
 </html>

@@ -9,9 +9,14 @@ const browserSync = require("browser-sync").create();
 
 const path = {
   html: {
+    //* path.html.src - watch uchun ()
+    /* Barcha fayllardagi o'zgarishlarni kuzatish uchun, jumladan 
+    ham "src/*.html", ham "src/_*.html" fayllarni */
+    src: "src/*.html",
+    //* path.html.srcDist - dist papkasiga tashlash uchun
     /* faqat "src/*.html" fayllarni "dest"ga o'tqazmoqdamiz, 
     "src/_*.html" fayllarni esa o'tishlarini inkor ("!") qilmoqdamiz*/
-    src: ["src/*.html", "!" + "src/_*.html"],
+    srcDist: ["src/*.html", "!" + "src/_*.html"],
     dest: "./dist/",
   },
   styles: {
@@ -29,7 +34,7 @@ function clean() {
 }
 //todo Html
 function html() {
-  return src(path.html.src)
+  return src(path.html.srcDist)
     // .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(fileInclude())
     .pipe(dest(path.html.dest))
@@ -39,7 +44,7 @@ function html() {
 function styles() {
   return src(path.styles.src)
     .pipe(sass())
-    // .pipe(cleanCSS())
+    .pipe(cleanCSS())
     .pipe(
       rename({
         basename: "main",

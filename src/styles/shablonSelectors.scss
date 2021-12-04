@@ -1,0 +1,22 @@
+%pr-type {
+  border: 1px solid brown;
+  *border: 3px dotted yellow;
+  color: chocolate;
+}
+
+%pr-for-grids {
+  height: 15px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+section.shablon-selectors {
+  h1 {
+    color: blue;
+  }
+  div {
+    p {
+      @extend %pr-type;
+    }
+  }
+}
